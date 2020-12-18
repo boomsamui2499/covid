@@ -1,4 +1,4 @@
 [[redirects]]
 from="/*"
-to="/index.html"
+to="php/index.html"
 status=200
