@@ -79,6 +79,9 @@
                 return new Promise(resolve => setTimeout(resolve, ms));
             }
             for (const test of data) {
+                if(chart){
+                    chart.destroy();
+                }
                 var chart = new CanvasJS.Chart("chartContainer", {
                     theme: "dark2",
                     animationEnabled: true,
@@ -114,7 +117,6 @@
                 });
                 chart.render();
                 await timeout(1000);
-                chart.destroy();
 
 
             }
