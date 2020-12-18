@@ -71,13 +71,6 @@
                         e.chart.render();
                     }
                 }
-                // data.forEach(x => {
-                //     dataCovid.push({
-                //         "label": x.county,
-                //         "y": x.cases,
-
-                //     })
-                // })
 
 
             }
@@ -111,9 +104,10 @@
                         type: "bar",
                         yValueFormatString: "#,###.## cases",
                         dataPoints: test.map(a => ({
+                            
+                            ...a,
                             "label": a.county,
-                            "y": a.cases,
-                            ...a
+                            "y": a.cases
                         }))
 
                     }]
