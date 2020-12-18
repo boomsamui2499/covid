@@ -78,7 +78,7 @@ var chart = new CanvasJS.Chart("chartContainer",{
   theme: "dark2", // "light1", "light2", "dark1"
   animationEnabled: true,
   exportEnabled: true,
-  height: 900,
+  height: 800,
   title: {
     text: "Covid 2020"
   },
