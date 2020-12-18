@@ -16,6 +16,7 @@ window.onload = function () {
                     let data = response.data;
                     console.log(data)
                     data.forEach(x => {
+                        x.label = x.date;
                         x.y = x.y;
                     })
 
@@ -82,11 +83,11 @@ var chart = new CanvasJS.Chart("chartContainer",{
   title: {
     text: "Covid 2020"
   },
-  axisX: {
-    margin: 10,
-    labelPlacement: "inside",
-    tickPlacement: "inside"
-  },
+//   axisX: {
+//     margin: 10,
+//     labelPlacement: "inside",
+//     tickPlacement: "inside"
+//   },
   axisY2: {
     titleFontSize: 14,
     includeZero: true,
