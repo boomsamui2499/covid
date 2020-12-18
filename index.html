@@ -13,8 +13,7 @@
         </div>
       </div>
 <script>
-    var ctx = document.getElementById("chartContainer");
-ctx.height = 500;
+
 
 window.onload = function () {
   axios.get(`https://disease.sh/v3/covid-19/nyt/states?lastdays=1`, {
@@ -87,6 +86,7 @@ var chart = new CanvasJS.Chart("chartContainer",{
   theme: "dark2", // "light1", "light2", "dark1"
   animationEnabled: true,
   exportEnabled: true,
+  height: 1000,
   title: {
     text: "Covid 2020"
   },
