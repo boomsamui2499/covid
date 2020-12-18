@@ -16,7 +16,6 @@ window.onload = function () {
                     let data = response.data;
                     console.log(data)
                     data.forEach(x => {
-                        x.label = x.date;
                         x.y = x.y;
                     })
 
