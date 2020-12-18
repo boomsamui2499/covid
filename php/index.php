@@ -101,6 +101,7 @@ var chart = new CanvasJS.Chart("chartContainer",{
 chart.render();
   
 }
+  
 </script>
 </head>
 <body>
